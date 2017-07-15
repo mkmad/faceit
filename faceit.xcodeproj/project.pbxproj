@@ -12,6 +12,8 @@
 		53438E121F147DF500E20D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53438E101F147DF500E20D02 /* Main.storyboard */; };
 		53438E141F147DF500E20D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53438E131F147DF500E20D02 /* Assets.xcassets */; };
 		53438E171F147DF500E20D02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53438E151F147DF500E20D02 /* LaunchScreen.storyboard */; };
+		53438E1F1F147E7E00E20D02 /* faceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53438E1E1F147E7D00E20D02 /* faceView.swift */; };
+		53E318A51F19777F00013530 /* faceitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E318A41F19777F00013530 /* faceitModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		53438E131F147DF500E20D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53438E161F147DF500E20D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53438E181F147DF500E20D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53438E1E1F147E7D00E20D02 /* faceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faceView.swift; sourceTree = "<group>"; };
+		53E318A41F19777F00013530 /* faceitModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = faceitModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				53438E131F147DF500E20D02 /* Assets.xcassets */,
 				53438E151F147DF500E20D02 /* LaunchScreen.storyboard */,
 				53438E181F147DF500E20D02 /* Info.plist */,
+				53438E1E1F147E7D00E20D02 /* faceView.swift */,
+				53E318A41F19777F00013530 /* faceitModel.swift */,
 			);
 			path = faceit;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					53438E081F147DF500E20D02 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2J2L726TH7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53438E0F1F147DF500E20D02 /* ViewController.swift in Sources */,
+				53E318A51F19777F00013530 /* faceitModel.swift in Sources */,
+				53438E1F1F147E7E00E20D02 /* faceView.swift in Sources */,
 				53438E0D1F147DF500E20D02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2J2L726TH7;
 				INFOPLIST_FILE = faceit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mmadhava-hawk.iit.edu.faceit";
@@ -272,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2J2L726TH7;
 				INFOPLIST_FILE = faceit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mmadhava-hawk.iit.edu.faceit";
@@ -299,6 +310,7 @@
 				53438E1D1F147DF500E20D02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
