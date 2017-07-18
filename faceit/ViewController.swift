@@ -10,7 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var myFace: Face = Face(eyesState: .open, mouth: .smile)
+    var myFace: Face = Face(mouthVal: .smile, eyesVal: .open)
+    
+    enum expression{
+        case happy
+        case sad
+    }
+    
+    // Note: here .frown means a Face.mouth type with .frown value set.
+    let smileStates: Dictionary<Int, Face.mouth> = [-2: .frown, -1: .ok, 0: .nothing, 1: .blush, 2: .smile]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +45,19 @@ class ViewController: UIViewController {
 
     }
     
+    //Note: I need to update the model and the view here.
     @IBAction func tapping(_ sender: UITapGestureRecognizer) {
-        print("Touching")
-        myView?.eyesOpen = (myView?.eyesOpen)! ? false : true
+        switch myFace.eyesVal{
+        case .open:
+            myView?.eyesOpen = false
+            myFace.eyesVal = .closed
+        case .closed:
+            myView?.eyesOpen = true
+            myFace.eyesVal = .open
+        }
     }
     
     @IBAction func pinching(_ sender: UIPinchGestureRecognizer) {
-        print("Pinching")
         switch sender.state{
         case .changed, .ended:
             myView?.scale *= sender.scale
@@ -54,15 +68,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func swipingUp(_ sender: UISwipeGestureRecognizer) {
-        myView?.smileCurve = 1
+        updateFace(ex: expression.sad)
 
     }
     
     @IBAction func swipingDown(_ sender: UISwipeGestureRecognizer) {
-        myView?.smileCurve = -1
+        updateFace(ex: expression.happy)
 
     }
     
-    
+    //Note: I need to update the model and the view here.
+    func updateFace(ex: expression){
+        switch ex{
+        case .happy:
+            myFace.mouthVal = smileStates[myFace.mouthVal.happier.rawValue] ?? Face.mouth.smile
+            myView.smileCurve = CGFloat(myFace.mouthVal.happier.rawValue)
+        case .sad:
+            myFace.mouthVal = smileStates[myFace.mouthVal.sadder.rawValue] ?? Face.mouth.frown
+            myView.smileCurve = CGFloat(myFace.mouthVal.sadder.rawValue)
+        }
+        
+    }
 }
 

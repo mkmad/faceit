@@ -113,7 +113,7 @@ class faceView: UIView {
         let smileEnd = CGPoint(x: box.maxX, y: box.midY)
         
         // Controls how much to smile
-        let smileOffset = CGFloat(max(-1, min(self.smileCurve, 1))) * box.height
+        let smileOffset = CGFloat(max(-2, min(self.smileCurve, 2))) * box.height
         
         // These are control points, they pull the curve towards them
         let cp1 = CGPoint(x: (box.minX + box.width/3), y: (box.midY + smileOffset))
