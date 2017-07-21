@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     var myFace: Face = Face(mouthVal: .smile, eyesVal: .open)
     

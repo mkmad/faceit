@@ -25,7 +25,7 @@ class spMaster: UIViewController {
     // to check if its pressed etc.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let dest = segue.destination as? ViewController{
+        if let dest = segue.destination as? MainViewController{
             // Force load the view
             let _ = dest.view
             if let id = segue.identifier{
