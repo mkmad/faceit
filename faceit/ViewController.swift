@@ -82,10 +82,10 @@ class ViewController: UIViewController {
         switch ex{
         case .happy:
             myFace.mouthVal = smileStates[myFace.mouthVal.happier.rawValue] ?? Face.mouth.smile
-            myView.smileCurve = CGFloat(myFace.mouthVal.happier.rawValue)
+            myView?.smileCurve = CGFloat(myFace.mouthVal.happier.rawValue)
         case .sad:
             myFace.mouthVal = smileStates[myFace.mouthVal.sadder.rawValue] ?? Face.mouth.frown
-            myView.smileCurve = CGFloat(myFace.mouthVal.sadder.rawValue)
+            myView?.smileCurve = CGFloat(myFace.mouthVal.sadder.rawValue)
         }
         
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533A17331F22781000594D19 /* spMaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533A17321F22781000594D19 /* spMaster.swift */; };
 		53438E0D1F147DF500E20D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53438E0C1F147DF500E20D02 /* AppDelegate.swift */; };
 		53438E0F1F147DF500E20D02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53438E0E1F147DF500E20D02 /* ViewController.swift */; };
 		53438E121F147DF500E20D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53438E101F147DF500E20D02 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533A17321F22781000594D19 /* spMaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = spMaster.swift; sourceTree = "<group>"; };
 		53438E091F147DF500E20D02 /* faceit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53438E0C1F147DF500E20D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53438E0E1F147DF500E20D02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				53438E181F147DF500E20D02 /* Info.plist */,
 				53438E1E1F147E7D00E20D02 /* faceView.swift */,
 				53E318A41F19777F00013530 /* faceitModel.swift */,
+				533A17321F22781000594D19 /* spMaster.swift */,
 			);
 			path = faceit;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				53438E0F1F147DF500E20D02 /* ViewController.swift in Sources */,
 				53E318A51F19777F00013530 /* faceitModel.swift in Sources */,
+				533A17331F22781000594D19 /* spMaster.swift in Sources */,
 				53438E1F1F147E7E00E20D02 /* faceView.swift in Sources */,
 				53438E0D1F147DF500E20D02 /* AppDelegate.swift in Sources */,
 			);
